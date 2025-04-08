@@ -20,7 +20,30 @@
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true,
-		"noUncheckedSideEffectImports": true
+		"noUncheckedSideEffectImports": true,
+
+		"baseUrl": ".",
+		// "paths": {
+		// 	"@/*": [
+		// 	"./src/*"
+		// 	]
+		// }
+		"paths": {
+			"components/*": ["src/components/*"],
+			"config/*": ["src/config/*"],
+			"assets/*": ["src/assets/*"],
+			"hoc/*": ["src/hoc/*"],
+			"hooks/*": ["src/hooks/*"],
+			"interfaces/*": ["src/interfaces/*"],
+			"lib/*": ["src/lib/*"],
+			"store/*": ["src/store/*"],
+			"utils/*": ["src/utils/*"],
+			"routes/*": ["src/routes/*"],
+			"pages/*": ["src/pages/*"],
+			"layouts/*": ["src/layouts/*"],
+			"services/*": ["src/services/*"]
+		},
+
 	},
 	"include": ["src"]
 }
