@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
 	darkMode: "class",
 	content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -8,11 +9,6 @@ export default {
 				gotham: ["gotham", "sans-serif"],
 			},
 			colors: {
-				white: "#ffffff",
-				purplePrimary: "#2F0248",
-				purpleSecondary: "#D597F817",
-				lightPurple: "#5C068C",
-				extraLightPurple: "#FAF7FB",
 				shadow: {
 					500: "rgba(112, 144, 176, 0.08)",
 				},
