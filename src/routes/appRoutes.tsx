@@ -3,14 +3,12 @@ import Expenses from "../pages/Expenses";
 import History from "../pages/History";
 import RoommatesList from "../pages/RoommatesList";
 import Reminders from "../pages/Reminders";
-import Settings from "../pages/Settings";
+// import Settings from "../pages/Settings";
 import { Home, FileText, Users, Bell, } from 'lucide-react';
 import { RoutesType } from 'utils/interfaces';
-
-
 import {
   PieChart,
-  Settings2,
+  // Settings2,
 } from "lucide-react"
 
 export const appPages:RoutesType[] = [
@@ -20,7 +18,7 @@ export const appPages:RoutesType[] = [
     element: <Dashboard />,
     name: "Dashboard",
     title: "Dashboard",
-    icon: <Home />,
+    Icon: Home,
   },
   {
     path: "/expenses",
@@ -28,8 +26,8 @@ export const appPages:RoutesType[] = [
     element: <Expenses />,
     name: "Expenses",
     title: "Expenses",
-    // icon: <FileText />,
-    icon: <PieChart />,
+    // Icon: <FileText />,
+    Icon: PieChart ,
   },
   {
     path: "/history",
@@ -37,7 +35,7 @@ export const appPages:RoutesType[] = [
     element: <History />,
     name: "History",
     title: "History",
-    icon: <FileText />,
+    Icon: FileText ,
   },
   {
     path: "/roommates-list",
@@ -45,7 +43,7 @@ export const appPages:RoutesType[] = [
     element: <RoommatesList />,
     name: "RoommatesList",
     title: "RoommatesList",
-    icon: <Users />,
+    Icon: Users ,
   },
   {
     path: "/reminders",
@@ -53,14 +51,14 @@ export const appPages:RoutesType[] = [
     element: <Reminders />,
     name: "Reminders",
     title: "Reminders",
-    icon: <Bell />,
+    Icon: Bell ,
   },
-  {
-    path: "/settings",
-    url: "/settings",
-    element: <Settings />,
-    name: "Settings",
-    title: "Settings",
-    icon: <Settings2/>,
-  }
+  // {
+  //   path: "/settings",
+  //   url: "/settings",
+  //   element: <Settings />,
+  //   name: "Settings",
+  //   title: "Settings",
+  //   Icon: Settings2,
+  // }
 ];

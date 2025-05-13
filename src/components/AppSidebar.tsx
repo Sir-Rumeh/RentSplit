@@ -1,6 +1,4 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-
-
 "use client"
 
 import * as React from "react"
@@ -27,7 +25,7 @@ import {
   Settings2,
   // SquareTerminal,
 } from "lucide-react"
-// import { appPages } from 'routes/appRoutes'
+import { appPages } from 'routes/appRoutes'
 
 
 // This is sample data.
@@ -54,7 +52,7 @@ const data = {
       plan: "Free",
     },
   ],
-    projects: [
+  projects: [
     {
       name: "Design Engineering",
       url: "#",
@@ -74,40 +72,44 @@ const data = {
   navMain: [
     {
       title: "Settings",
-      url: "#",
+      path: "#",
       icon: Settings2,
       items: [
         {
           title: "General",
-          url: "#",
+          path: "#",
         },
         {
           title: "Team",
-          url: "#",
+          path: "#",
         },
         {
           title: "Billing",
-          url: "#",
+          path: "#",
         },
         {
           title: "Limits",
-          url: "#",
+          path: "#",
         },
       ],
     },
   ],
-
 }
 
 export default function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+  // const activeRoute = (routeName: string) => {
+  //   if (location.pathname.includes(routeName)) {
+  //     return true;
+  //   }
+  //   return false;
+  // };
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
         <TeamSwitcher teams={data.teams} />
       </SidebarHeader>
       <SidebarContent>
-        {/* <NavProjects projects={appPages as any} /> */}
-        <NavProjects projects={data.projects} />
+        <NavProjects projects={appPages as any} />
         <NavMain items={data.navMain} />
       </SidebarContent>
       <SidebarFooter>

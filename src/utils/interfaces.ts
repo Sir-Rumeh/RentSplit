@@ -1,4 +1,7 @@
-import { ReactElement, ReactNode } from 'react';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { ReactElement } from 'react';
+import type { LucideIcon } from 'lucide-react';
+
 
 export interface RoutesType {
    path:string;
@@ -6,6 +9,7 @@ export interface RoutesType {
    name:string;
    title:string;
    url:string;
-   icon:ReactElement | ReactNode | HTMLElement;
-
+   Icon: LucideIcon;
+   items?:any[];
+   // Icon:ReactElement | ReactNode | HTMLElement;
 }
