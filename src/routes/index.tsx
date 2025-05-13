@@ -4,12 +4,12 @@ import History from "../pages/History";
 import RoommatesList from "../pages/RoommatesList";
 import Reminders from "../pages/Reminders";
 import Settings from "../pages/Settings";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 
 export const appPages = [
   {
-    path: "/",
+    path: "/dashboard",
     element: <Dashboard />,
     name: "Dashboard"
   },
@@ -44,9 +44,11 @@ export const appPages = [
 export default function AppRoutes() {
   return (
     <Routes>
+      <Route path="/" element={<Navigate to="/dashboard" replace />} />
       {appPages.map((page, idx) => (
         <Route key={idx} path={page.path} element={page.element} />
       ))}
+
     </Routes>
   );
 }
