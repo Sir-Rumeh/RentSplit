@@ -16,7 +16,7 @@ export function ThemeToggle() {
   };
 
   return (
-    <Button className='absolute right-5 bottom-5' variant="ghost" size="icon" onClick={toggleTheme}>
+    <Button className='z-50 absolute right-5 bottom-5' variant="ghost" size="icon" onClick={toggleTheme}>
       {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className={`h-5 w-5 text-[#1e1e1e]`} />}
     </Button>
   );

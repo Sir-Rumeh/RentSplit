@@ -7,7 +7,6 @@
 @import "tw-animate-css";
 @custom-variant dark (&:is(.dark *));
 
-
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -53,6 +52,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
+  
 }
 
 .dark {
@@ -89,7 +89,6 @@
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
 }
-
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
@@ -129,4 +128,12 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
 

@@ -9,12 +9,14 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <ThemeProvider>
-      <ThemeToggle />  
-      <BrowserRouter>
-        <AppRoutes />
-      </BrowserRouter>
-    </ThemeProvider>
+    <>
+      <ThemeProvider>
+        <ThemeToggle />  
+        <BrowserRouter>
+          <AppRoutes />
+        </BrowserRouter>
+      </ThemeProvider>
+    </>
   )
 }
 
