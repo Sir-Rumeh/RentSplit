@@ -14,8 +14,9 @@ import {
   SidebarTrigger,
 } from "components/components/ui/sidebar"
 import AppSidebar from 'components/AppSidebar'
+import { Outlet } from 'react-router-dom'
 
-export default function DashboardLayout ({ children }: { children: React.ReactNode }) {
+export default function DashboardLayout () {
   return (
     <SidebarProvider>
       <AppSidebar />
@@ -41,7 +42,7 @@ export default function DashboardLayout ({ children }: { children: React.ReactNo
         </header>
         <>
           <main className="flex flex-1 flex-col gap-4 p-4 pt-0 overflow-y-auto">
-            {children}
+            <Outlet />
           </main>
         </>
       </SidebarInset>

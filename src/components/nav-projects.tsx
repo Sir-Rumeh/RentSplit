@@ -47,7 +47,7 @@ export function NavProjects({
                 to={item.path}
                 >
                   <Icon/>
-                    <span>{item.name}</span>
+                  <span>{item.name}</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>)

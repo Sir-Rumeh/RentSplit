@@ -1,10 +1,8 @@
 import React from 'react';
-import DashboardLayout from '../layouts/DashboardLayout';
 
 const Dashboard = () => {
   return (
-   <>
-      <DashboardLayout>
+    <>
         <div className="">
           <div className="grid auto-rows-min gap-4 md:grid-cols-3">
             <div className="aspect-video rounded-xl bg-muted/50" />
@@ -13,8 +11,7 @@ const Dashboard = () => {
           </div>
           <div className="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min" />
         </div>
-      </DashboardLayout>
-   </>
+    </>
 );
 }
 
